@@ -24,7 +24,7 @@ class PatternMgr:
         self._botName = u"Nameless"
         punctuation = re.escape(u"\"`~!@#$%^&*()-_=+[{]}\|;:',<.>/?")
         self._puncStripRE = re.compile("u[" + punctuation + u"]")
-        self._upuncStripRE = re.compile(u" [！，。？；：]")
+        self._upuncStripRE = re.compile(u"[！，。？；：～……“、［］·”‘’（）——]")
         self._whitespaceRE = re.compile("\s", re.LOCALE | re.UNICODE)
         self._lang_support = LangSupport.UnicodeSupport()
 
@@ -146,7 +146,7 @@ class PatternMgr:
         input = string.upper(pattern)
         input = self._puncStripRE.sub("", input)
         input = self._upuncStripRE.sub(u"", input)
-
+        print input
         if that.strip() == u"": that = u"ULTRABOGUSDUMMYTHAT" # 'that' must never be empty
         thatInput = string.upper(that)
         thatInput = re.sub(self._whitespaceRE, " ", thatInput)
