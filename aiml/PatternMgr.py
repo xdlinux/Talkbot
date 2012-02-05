@@ -146,7 +146,7 @@ class PatternMgr:
         input = string.upper(pattern)
         input = self._puncStripRE.sub("", input)
         input = self._upuncStripRE.sub(u"", input)
-        print input
+        #print input
         if that.strip() == u"": that = u"ULTRABOGUSDUMMYTHAT" # 'that' must never be empty
         thatInput = string.upper(that)
         thatInput = re.sub(self._whitespaceRE, " ", thatInput)

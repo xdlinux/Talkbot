@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
   <category>
+    <pattern>*</pattern>
+    <template>
+      <think><set name="star"><star /></set></think>
+      <random>
+        <li>唔... 主人没有教我怎么回答"<get name="star" />"... </li> 
+        <li>唔... </li> 
+        <li>Na Ni ? </li> 
+        <li>喵... (睁大眼睛看着你 </li> 
+        <li>摇尾巴... </li>
+      </random>
+    </template>
+  </category>
+
+  <category>
     <pattern>你 好</pattern>
     <template> 
       <random>
