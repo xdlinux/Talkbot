@@ -80,4 +80,12 @@
     </template>
   </category>
 
+  <category><pattern>你 * 主 人 是 谁</pattern><template><srai>你主人是谁</srai></template></category>
+  <category>
+    <pattern>你 主 人 是 谁</pattern>
+    <template>
+      我家主人是既文艺又帅气，爱祖国爱人民的，现在还没有妹纸的<bot name="master" /> ! 妹纸们快fo他吧!
+    </template>
+  </category>
+  
 </aiml>
