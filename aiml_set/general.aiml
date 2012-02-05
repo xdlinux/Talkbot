@@ -60,6 +60,7 @@
     <template>对啊对啊~  </template>
   </category>
   
+  <category> <pattern>* 晚 安 * </pattern> <template><srai>晚安</srai> </template> </category>
   <category> <pattern>晚 安 * </pattern> <template><srai>晚安</srai> </template> </category>
   
   <category>
